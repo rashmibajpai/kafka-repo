@@ -14,20 +14,20 @@ import java.util.List;
 @RestController
 public class KafkaConsumerApplication {
 
-
 	List<String> messages = new ArrayList<>();
-
 	User userFromTopic = null;
-
 	@GetMapping("/testmsg")
 	public String  gettestMsg(){
-
 	return "Test for git msg";
 	}
 
 	@GetMapping("/consumeStringMessage")
 	public List<String> consumeMsg() {
 		return messages;
+	}
+	@GetMapping("/testinggit")
+	public String  testGitchanges(){
+	return "Test for git changes";
 	}
 
 	@GetMapping("/consumeJsonMessage")
