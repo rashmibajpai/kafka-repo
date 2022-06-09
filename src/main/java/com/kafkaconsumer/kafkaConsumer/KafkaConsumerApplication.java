@@ -19,6 +19,12 @@ public class KafkaConsumerApplication {
 
 	User userFromTopic = null;
 
+	@GetMapping("/testmsg")
+	public String  gettestMsg(){
+
+	return "Test for git msg";
+	}
+
 	@GetMapping("/consumeStringMessage")
 	public List<String> consumeMsg() {
 		return messages;
